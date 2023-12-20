@@ -1,0 +1,46 @@
+// Exercicio 6 
+
+package curso_programacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+    //Entrada de Dados pelo teclado
+	
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
+	
+	double A, B, C;
+	double p = 3.14159;
+	
+	System.out.println("Digite o primeiro número:");
+	A = sc.nextDouble(); 
+	
+	System.out.println("Digite o segundo número:");
+	B = sc.nextDouble(); 
+	
+	System.out.println("Digite o terceiro número:");
+	C = sc.nextDouble(); 
+	
+	
+	double areatriangulo = (A * C) / 2;
+	double areacirculo = p * Math.pow(C, 2);
+	double areatrapezio = ((A + B) * C) / 2;
+	double areaquadrado = B * B;
+	double arearetangulo = A * B;
+
+	System.out.printf("A área do triângulo retângulo que tem A por base e C por altura é %.3f%n", areatriangulo);
+	System.out.printf("A a área do círculo de raio C é %.3f%n", areacirculo);
+	System.out.printf(") a área do trapézio que tem A e B por bases e C por altura é %.3f%n", areatrapezio);
+	System.out.printf("A área do quadrado que tem por lado B é %.3f%n", areaquadrado);
+	System.out.printf("A área do retângulo que tem lados A e B é %.3f%n", arearetangulo);
+
+	sc.close();
+		
+	}
+
+}
